@@ -1,0 +1,26 @@
+{
+  "name": "lodown-jrmccarthy22",
+  "version": "1.0.0",
+  "description": "___        ______     ____ _                 _  ___           / \\ \\      / / ___|   / ___| | ___  _   _  __| |/ _ \\         / _ \\ \\ /\\ / /\\___ \\  | |   | |/ _ \\| | | |/ _` | (_) |       / ___ \\ V  V /  ___) | | |___| | (_) | |_| | (_| |\\__, |      /_/   \\_\\_/\\_/  |____/   \\____|_|\\___/ \\__,_|\\__,_|  /_/   -----------------------------------------------------------------",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- test/ -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrmccarthy22/lodown.git"
+  },
+  "author": "Juliana McCarthy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrmccarthy22/lodown/issues"
+  },
+  "homepage": "https://github.com/jrmccarthy22/lodown#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "i": "^0.3.6",
+    "istanbul": "^0.4.5",
+    "mocha": "^8.3.2",
+    "sinon": "^9.2.4"
+  }
+}
