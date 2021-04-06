@@ -271,7 +271,7 @@ module.exports.map = map;
 */
 
 function pluck(array, property) {
-    return _.map(array, function(element, index, collection) { 
+    return array.map(function(element, index, collection) { 
         return element[property]; 
     });
 }
@@ -290,13 +290,13 @@ module.exports.pluck = pluck;
 function every(collection, test) {
     var bool = true;
     if (typeof test === 'function') {
-        _.each(collection, function(val, i, col) {
+        collection.each(function(val, i, col) {
             if (test(val, i, col) === false) {
                 bool = false;
             }
         })
     } else {
-        _.each(collection, function(val, i, col) {
+        collection.each(function(val, i, col) {
             if (val === false) {
                 bool = false;
             }
@@ -319,13 +319,13 @@ module.exports.every = every;
 function some(collection, test) {
      var bool = false;
     if (typeof test === 'function') {
-        _.each(collection, function(val, i, col) {
+        collection.each(function(val, i, col) {
             if (test(val, i, col) === true) {
                 bool = true;
             }
         })
     } else {
-        _.each(collection, function(val, i, col) {
+        collection.each(function(val, i, col) {
             if (val === true) {
                 bool = true;
             }
